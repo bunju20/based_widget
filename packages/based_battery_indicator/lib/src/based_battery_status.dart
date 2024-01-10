@@ -20,9 +20,6 @@ class BasedBatteryStatus {
   }
 
   Color getBatteryColor(ColorScheme colorScheme) {
-    if (type.isError) return Colors.red[900]!;
-    if (type.isCharing) return Colors.green[500]!;
-    if (type.isLow) return Colors.orange[700]!;
-    return 0 <= _value && _value <= 20 ? Colors.red[500]! : colorScheme.outline;
+    return Color(0xFF20C4BD);
   }
 }

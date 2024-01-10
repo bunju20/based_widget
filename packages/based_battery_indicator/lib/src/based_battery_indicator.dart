@@ -68,7 +68,6 @@ class BasedBatteryIndicator extends StatelessWidget {
     final barWidth = trackHeight * trackAspectRatio;
     final borderRadius = barHeight / 5;
     final currentColor = status.getBatteryColor(colorScheme);
-
     return Padding(
       padding: EdgeInsets.all(trackHeight / 12),
       child: ClipRRect(
